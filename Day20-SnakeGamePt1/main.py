@@ -12,7 +12,8 @@ SCREEN_WIDTH = 600
 SCREEN_HEIGHT = 600
 
 # Other magic numbers
-STARTING_LENGTH = 2  # Does not include head.
+STARTING_LENGTH = 3
+MOVE_DISTANCE = 20
 
 # Screen Setup
 screen = turtle.Screen()
@@ -23,22 +24,31 @@ screen.tracer(0)
 # Create the snake
 snake = Snake(5)
 screen.update()
-time.sleep(5)
+time.sleep(1)
 
 # Controls
 screen.listen()
 screen.onkey(lambda: snake.turn(90), "w")
+screen.onkey(lambda: snake.turn(90), "Up")
 screen.onkey(lambda: snake.turn(180), "a")
+screen.onkey(lambda: snake.turn(180), "Left")
 screen.onkey(lambda: snake.turn(270), "s")
+screen.onkey(lambda: snake.turn(270), "Down")
 screen.onkey(lambda: snake.turn(0), "d")
-
+screen.onkey(lambda: snake.turn(0), "Right")
 
 game_running = True
 
 while game_running:
-    snake.move()
+    snake.move(MOVE_DISTANCE)
+    if snake.off_screen():
+        print("Player went off screen!")
+        game_running = False
+    elif snake.snake_bite():
+        print("Player bit themselves!")
+        game_running = False
     screen.update()
-    time.sleep(1)
+    time.sleep(.2)
 
 # Keep Alive
 screen.exitonclick()
