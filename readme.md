@@ -9,4 +9,20 @@ I'm going to use this as a collected repo instead going forward.
 - Move the snake
 - Control the snake
 
+[Day 21: Snake Game (Part 2)](Day21-SnakeGamePt2)
+
+- Create food
+- Keep score
+- Grow the snake
+- End Game Conditions
+
+[Day 22: Pong](Day22-Pong)
+
+- It's Pong. 
+
+[Day 23: Turtle Crossing](Day23-TurtleCrossing)
+
+- Simplified version of Frogger or Crossy Road.
+
+
 
