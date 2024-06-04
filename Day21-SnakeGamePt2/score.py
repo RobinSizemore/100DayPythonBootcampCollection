@@ -6,9 +6,10 @@ class Scoreboard(turtle.Turtle):
         super().__init__()
         self.score = 0
         self.penup()
-        self.goto(0, 275)
+        self.goto(0, 250)
         self.color("white")
         self.high_score = 0
+        self.get_high_score()
         self.draw_score()
 
     def draw_score(self):
@@ -35,3 +36,11 @@ class Scoreboard(turtle.Turtle):
         self.goto(0, -45)
         self.write("Press 'r' to restart", False, "center", ("Arial", 25, "normal"))
         self.goto(0, 275)
+
+    def get_high_score(self):
+        with open("highscore.txt", "r") as file:
+            self.high_score = int(file.readline())
+
+    def write_high_score(self):
+        with open("highscore.txt", "w") as file:
+            file.write(f"{self.high_score}")
