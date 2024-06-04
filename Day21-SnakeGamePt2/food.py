@@ -15,5 +15,7 @@ class Food(turtle.Turtle):
     def respawn(self):
         random_x = random.randint(-14, 14) * 20
         random_y = random.randint(-14, 14) * 20
+        self.color(random.choice(color_list))
         self.speed("fastest")
         self.goto(random_x, random_y)
+        print(f"Food at {random_x}, {random_y}")
