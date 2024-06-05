@@ -24,5 +24,15 @@ I'm going to use this as a collected repo instead going forward.
 
 - Simplified version of Frogger or Crossy Road.
 
+[Day 24: Mail Merge](Day24-mailmerge)
+- Reading from `.txt` files
+- Writing to `.txt` files
+- Handling file paths
+- Using string methods to manipulate text
 
+[Day 25: U.S. States Game](Day25-DataFiles)
+- Working with pandas DataFrames
+- Reading from `.csv` files
+- Using the turtle module to create a GUI
+- Handling user input
 
