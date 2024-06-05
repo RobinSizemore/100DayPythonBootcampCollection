@@ -12,11 +12,10 @@ draw_turtle.hideturtle()
 draw_turtle.penup()
 
 states_data_frame = pandas.read_csv("50_states.csv")
-states_dict = states_data_frame.to_dict()
 
 guessed = []
-while len(guessed) < 50:
-    answer_state = screen.textinput(title="Guess A State", prompt="Enter the name of another state.")
+answer_state = screen.textinput(title="Guess A State", prompt="Enter the name of another state.")
+while len(guessed) < 50 and answer_state.lower() != "exit":
     result = states_data_frame[states_data_frame.state == answer_state.title()]
     print(result)
     if answer_state.title() in guessed:
@@ -27,8 +26,14 @@ while len(guessed) < 50:
         guessed.append(answer_state.title())
         draw_turtle.goto(int(result.x.iloc[0]), int(result.y.iloc[0]))
         draw_turtle.write(answer_state.title(), False, "left", ("Arial", 7, "normal"))
+    answer_state = screen.textinput(title="Guess A State", prompt="Enter the name of another state.")
 
-print("You got them all!")
-
-
-turtle.mainloop()
+if len(guessed) >= 50:
+    print("You got them all!")
+    turtle.bye()
+else:
+    # Get the states that are not in the guessed list
+    not_guessed_states = states_data_frame[~states_data_frame['state'].isin(guessed)]  # ~ means 'not' here.
+    # Print the state names
+    not_guessed_states['state'].to_csv("missed_states.csv")
+    turtle.bye()
