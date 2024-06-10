@@ -1,8 +1,28 @@
 ## 100 Days of Code: Python Pro Bootcamp Repo
 
-I got a little tired of creating a new repo for each "day" of the [100 days of code Python bootcamp](https://www.udemy.com/course/100-days-of-code) that I'm taking at [Udemy](https://www.udemy.com/).
+Now that we're not just using replit, I'm keeping a single repo for the [100 days of code Python bootcamp](https://www.udemy.com/course/100-days-of-code) that I'm taking at [Udemy](https://www.udemy.com/).
 
-I'm going to use this as a collected repo instead going forward.
+Here are links to each day's lesson/project.
+
+[Day 15: Coffee Machine Program](Day15-CoffeeMachine)
+- Implementing OOP concepts
+- Working with dictionaries
+- Handling user input
+
+[Day 16: OOP Coffee Machine](Day16-OOPCoffeeMachine)
+- Refactoring the Coffee Machine program to use classes and methods
+
+[Day 17: Quiz Project](Day17-QuizProject)
+- Creating a multiple-choice quiz
+- Implementing classes and inheritance
+
+[Day 18: Hirst Painting](Day18-HirstPainting)
+- Working with the turtle module
+- Understanding the RGB color model
+
+[Day 19: Etch A Sketch App](Day19-EtchASketch)
+- Creating a simple drawing program
+- Handling keyboard events
 
 [Day 20: Snake Game (Part 1)](Day20-SnakeGamePt1)
 - Create a snake body
@@ -36,3 +56,25 @@ I'm going to use this as a collected repo instead going forward.
 - Using the turtle module to create a GUI
 - Handling user input
 
+[Day 26: NATO Alphabet](Day26-NATOAlphabet)
+- Working with pandas DataFrames
+- Handling user input
+- Error handling in Python
+
+[Day 27: Mile to Km Converter](Day27-MileToKmConverter)
+- Creating a GUI with tkinter
+- Handling button clicks
+
+[Day 28: Pomodoro Timer](Day28-PomodoroTimer)
+- Implementing the Pomodoro technique
+- Working with the time module
+
+[Day 29: Password Manager](Day29-PasswordManager)
+- Creating a password manager
+- Working with JSON files
+- Encrypting and decrypting data
+
+[Day 30: Error Handling](Day30-ErrorHandling)
+- Understanding Python exceptions
+- Handling exceptions
+- Raising exceptions
