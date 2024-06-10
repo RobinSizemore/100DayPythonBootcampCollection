@@ -4,6 +4,13 @@ import random
 
 # Constants
 BACKGROUND_COLOR = "#B1DDC6"
+QUESTION_BG_PATH = "images/card_front.png"
+ANSWER_BG_PATH = "images/card_back.png"
+UNKNOWN_BTN_PATH = "images/wrong.png"
+KNOWN_BTN_PATH = "images/right.png"
+TO_BE_ASKED_PATH = "data/to_be_asked.csv"
+FRENCH_WORDS_PATH = "data/french_words.csv"
+FLIP_TIME = 3000
 
 
 # Main App Class
@@ -40,20 +47,20 @@ class FlashcardsApp:
         self.window.columnconfigure(1, uniform="a")
 
         self.card_canvas = tkinter.Canvas(height=526, width=800, highlightthickness=0, bg=BACKGROUND_COLOR)
-        self.question_bg = tkinter.PhotoImage(file="images/card_front.png")
-        self.answer_bg = tkinter.PhotoImage(file="images/card_back.png")
+        self.question_bg = tkinter.PhotoImage(file=QUESTION_BG_PATH)
+        self.answer_bg = tkinter.PhotoImage(file=ANSWER_BG_PATH)
         self.bg_img = self.card_canvas.create_image(400, 263, image=self.question_bg)
         self.card_canvas.grid(column=0, row=0, columnspan=2)
 
         self.study_label = self.card_canvas.create_text(400, 150, text="Language", font=("Ariel", 40, "italic"))
         self.study_word = self.card_canvas.create_text(400, 263, text="Language", font=("Ariel", 60, "bold"))
 
-        self.unknown_btn_image = tkinter.PhotoImage(file="images/wrong.png")
+        self.unknown_btn_image = tkinter.PhotoImage(file=UNKNOWN_BTN_PATH)
         self.unknown_btn = tkinter.Button(image=self.unknown_btn_image, highlightthickness=0, relief="flat", bd=0,
                                           command=self.mark_unknown)
         self.unknown_btn.grid(column=0, row=1)
 
-        self.known_btn_image = tkinter.PhotoImage(file="images/right.png")
+        self.known_btn_image = tkinter.PhotoImage(file=KNOWN_BTN_PATH)
         self.known_btn = tkinter.Button(image=self.known_btn_image, highlightthickness=0, relief="flat", bd=0,
                                         command=self.mark_known)
         self.known_btn.grid(column=1, row=1)
@@ -61,14 +68,14 @@ class FlashcardsApp:
     def load_questions(self):
         try:
             # Try to load from to_be_asked.csv
-            self.all_questions_df = pandas.read_csv(filepath_or_buffer="data/to_be_asked.csv")
+            self.all_questions_df = pandas.read_csv(filepath_or_buffer=TO_BE_ASKED_PATH)
             self.all_questions = self.all_questions_df.to_dict(orient="records")
             # If the file is empty, raise an exception to load from french_words.csv
             if not self.all_questions:
                 raise FileNotFoundError
         except (FileNotFoundError, pandas.errors.EmptyDataError):
             # If to_be_asked.csv doesn't exist or is empty, load from french_words.csv
-            self.all_questions_df = pandas.read_csv(filepath_or_buffer="data/french_words.csv")
+            self.all_questions_df = pandas.read_csv(filepath_or_buffer=FRENCH_WORDS_PATH)
             self.all_questions = self.all_questions_df.to_dict(orient="records")
 
     def ask_next(self):
@@ -78,15 +85,16 @@ class FlashcardsApp:
         except ValueError:  # We've run out of questions.  Start over.
             self.load_questions()
         self.card_canvas.itemconfig(self.bg_img, image=self.question_bg)
-        self.card_canvas.itemconfig(self.study_label, text="French")
-        study_word = self.all_questions[self.pick_item]["French"]
+        self.card_canvas.itemconfig(self.study_label, text=self.all_questions_df.columns[0])
+        study_word = self.all_questions[self.pick_item][self.all_questions_df.columns[0]]
         self.card_canvas.itemconfig(self.study_word, text=study_word)
-        self.flip_timer = self.window.after(ms=3000, func=self.flip_card)
+        self.flip_timer = self.window.after(ms=FLIP_TIME, func=self.flip_card)
 
     def flip_card(self):
         self.card_canvas.itemconfig(self.bg_img, image=self.answer_bg)
-        self.card_canvas.itemconfig(self.study_label, text="English")
-        self.card_canvas.itemconfig(self.study_word, text=self.all_questions[self.pick_item]["English"])
+        self.card_canvas.itemconfig(self.study_label, text=self.all_questions_df.columns[1])
+        self.card_canvas.itemconfig(self.study_word,
+                                    text=self.all_questions[self.pick_item][self.all_questions_df.columns[1]])
 
     def mark_known(self):
         self.window.after_cancel(self.flip_timer)

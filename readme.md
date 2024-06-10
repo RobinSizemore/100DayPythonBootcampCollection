@@ -78,3 +78,12 @@ Here are links to each day's lesson/project.
 - Understanding Python exceptions
 - Handling exceptions
 - Raising exceptions
+
+[Day 31: Flashcard Capstone Project](Day31-Flashcards)
+- Flashcard project for studying French
+- Could be expanded/altered to study pretty much any topic.
+- Shows off everything learned so far
+
+[Day 32: DateTime and SMTP](Day32-Email-and-DateTime)
+- SMTP and DateTimes. 
+- I actually had trouble getting smtplib to work, so I used an OAuth method for sending the emails.
