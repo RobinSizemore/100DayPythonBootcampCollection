@@ -93,3 +93,9 @@ Here are links to each day's lesson/project.
 - Called the Kanye API for random quotes
 - Used the ISS tracking API to get the current location of the ISS
 - Utilized the Sunrise/Sunset API to get sunrise and sunset times for a specific location
+
+[Day 34: API and Updated Quizzler](Day34-API-Trivia-App)
+- Updated the Quizzler project (Day17) to fetch questions from an API
+- Implemented a replay feature
+- Added feedback for correct/incorrect answers
+
