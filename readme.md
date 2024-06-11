@@ -87,3 +87,9 @@ Here are links to each day's lesson/project.
 [Day 32: DateTime and SMTP](Day32-Email-and-DateTime)
 - SMTP and DateTimes. 
 - I actually had trouble getting smtplib to work, so I used an OAuth method for sending the emails.
+
+[Day 33: APIs](Day33-APIs)
+- Working with APIs
+- Called the Kanye API for random quotes
+- Used the ISS tracking API to get the current location of the ISS
+- Utilized the Sunrise/Sunset API to get sunrise and sunset times for a specific location
