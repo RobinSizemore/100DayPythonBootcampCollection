@@ -103,3 +103,15 @@ Here are links to each day's lesson/project.
 - Working with environment variables for API authentication
 - Sending SMS using the Telegram API
 - Fetching weather forecast data from the OpenWeatherMap API
+
+[Day 36: Stock Price Tracker](Day36-Stock-price-tracker)
+- Fetching stock price data from the Alpha Vantage API
+- Calculating the change in stock price
+- Fetching news articles related to the stock from the News API
+- Sending notifications via Telegram when the stock price change exceeds a certain threshold
+
+[Day 37: POST Requests](Day37-POST-Requests)
+- Creating a user on Pixela, a habit tracking API
+- Creating a graph to track a habit
+- Adding, updating, and deleting pixels on the graph
+- Working with environment variables for API authentication
