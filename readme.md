@@ -99,3 +99,7 @@ Here are links to each day's lesson/project.
 - Implemented a replay feature
 - Added feedback for correct/incorrect answers
 
+[Day 35: API Authentication and SMS](Day35-ApiAuthentication-SMS)
+- Working with environment variables for API authentication
+- Sending SMS using the Telegram API
+- Fetching weather forecast data from the OpenWeatherMap API
