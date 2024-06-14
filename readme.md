@@ -1,6 +1,6 @@
 ## 100 Days of Code: Python Pro Bootcamp Repo
 
-Now that we're not just using replit, I'm keeping a single repo for the [100 days of code Python bootcamp](https://www.udemy.com/course/100-days-of-code) that I'm taking at [Udemy](https://www.udemy.com/).
+Now that we're not just using replit, I'm keeping a single repo for the [100 days of code Python bootcamp](https://www.udemy.com/course/100-days-of-code) that I'm taking at [Udemy](https://www.udemy.com/).  Note that "days" aren't really days - she has the course broken out that way, but I tend to do two or three per day as an experienced programmer just learning Python and making sure I have a grasp on the fundamentals of it.
 
 Here are links to each day's lesson/project.
 
@@ -115,3 +115,10 @@ Here are links to each day's lesson/project.
 - Creating a graph to track a habit
 - Adding, updating, and deleting pixels on the graph
 - Working with environment variables for API authentication
+
+[Day 38: Workout Tracking Challenge](Day38-WorkoutTracking-Challenge)
+- Using the Nutritionix API to get exercise data from natural language input
+- Posting the exercise data to a Google Sheets document using the Sheety API
+- Working with environment variables for API authentication
+- Handling user input and API responses
+
