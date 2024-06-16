@@ -122,3 +122,9 @@ Here are links to each day's lesson/project.
 - Working with environment variables for API authentication
 - Handling user input and API responses
 
+[Day 39: Flight Deal Finder](Day39-FlightDealFinder)
+- Working with the Amadeus API for flight search
+- Sending notifications using the Telegram API
+- Fetching and updating data from a Google Sheets document using the Sheety API
+- Handling API responses and errors
+- Working with environment variables for API authentication
