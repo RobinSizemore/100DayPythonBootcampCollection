@@ -141,4 +141,13 @@ Day 39 to Day 45.
 - Working with requests to fetch web pages
 - Parsing HTML to extract data
 - Writing data to a text file
-- 
+
+[Day 46: Musical Time Machine](Day46-MusicalTimeMachine)
+- Web scraping with BeautifulSoup and lxml
+- Working with requests to fetch web pages
+- Parsing HTML to extract data
+- Using Spotipy to interact with Spotify's API
+- Creating a Spotify playlist and adding songs to it
+- Handling user input and API responses
+- Working with environment variables for API authentication
+
