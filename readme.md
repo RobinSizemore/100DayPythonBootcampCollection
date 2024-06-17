@@ -136,3 +136,9 @@ with them, I decided to skip these lessons and did not feel the
 need for a refresher. Hence, the progression directly from the 
 Day 39 to Day 45.
 
+[Day 45: BeautifulSoup Web Scraping](Day45-BeautifulSoup)
+- Web scraping with BeautifulSoup and lxml
+- Working with requests to fetch web pages
+- Parsing HTML to extract data
+- Writing data to a text file
+- 
