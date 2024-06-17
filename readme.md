@@ -128,3 +128,11 @@ Here are links to each day's lesson/project.
 - Fetching and updating data from a Google Sheets document using the Sheety API
 - Handling API responses and errors
 - Working with environment variables for API authentication
+
+Please note that there is a jump in the sequence of days. This is 
+because a few "days" of the course were dedicated to HTML and CSS. 
+As I frequently work with these technologies and feel comfortable 
+with them, I decided to skip these lessons and did not feel the 
+need for a refresher. Hence, the progression directly from the 
+Day 39 to Day 45.
+
