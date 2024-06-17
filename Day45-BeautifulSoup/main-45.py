@@ -2,6 +2,8 @@ from bs4 import BeautifulSoup
 import lxml
 import requests
 from pprint import pprint
+import notification_manager
+
 
 website = "https://web.archive.org/web/20200518073855/https://www.empireonline.com/movies/features/best-movies-2/"
 response = requests.get(url=website)

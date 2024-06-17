@@ -151,3 +151,10 @@ Day 39 to Day 45.
 - Handling user input and API responses
 - Working with environment variables for API authentication
 
+[Day 47: Amazon Price Scraping](Day47-AmazonPriceScraping)
+- Web scraping with BeautifulSoup and lxml
+- Working with requests to fetch web pages
+- Parsing HTML to extract data
+- Using environment variables for API authentication
+- Sending notifications using the Telegram API
+
