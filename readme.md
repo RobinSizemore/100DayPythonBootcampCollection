@@ -158,3 +158,10 @@ Day 39 to Day 45.
 - Using environment variables for API authentication
 - Sending notifications using the Telegram API
 
+[Day 48: Selenium Web Automation](Day48-Selenium)
+- Web automation with Selenium WebDriver
+- Navigating and interacting with websites programmatically
+- Fetching and parsing web elements
+- Automating form inputs and button clicks
+- Handling exceptions and stale elements
+- Automating a cookie clicker game
