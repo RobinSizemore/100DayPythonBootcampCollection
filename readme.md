@@ -165,3 +165,27 @@ Day 39 to Day 45.
 - Automating form inputs and button clicks
 - Handling exceptions and stale elements
 - Automating a cookie clicker game
+
+[Day 49: Automated Job Application](Day49-AutomatedJobApp)
+- Web automation with Selenium WebDriver
+- Using environment variables for sensitive data
+- Navigating and interacting with LinkedIn website programmatically
+- Automating form inputs and button clicks
+- Handling exceptions and delays in web automation
+
+Please note that I've decided to skip Day 50 of the course. The project for this day involved automating Tinder, and as a happily married individual, I did not feel comfortable working on this. Hence, the progression directly from Day 49 to Day 51.
+
+Please note that I've decided to skip Day 51 and Day 52 of the course. The projects for these days involved automating Twitter and Instagram respectively. I have no interest in using Twitter, especially considering their updated bot policies. As for Instagram, I do not approve of botting for followers, even as a practice exercise. Hence, the progression will continue directly from Day 49 to Day 53.
+
+[Day 53: Web Scraping Capstone](Day53-ScrapingCapstone)
+- Web scraping with BeautifulSoup and Selenium WebDriver
+- Using environment variables for sensitive data
+- Navigating and interacting with a cloned Zillow website programmatically
+- Fetching and parsing web elements
+- Automating form inputs and button clicks
+- Handling exceptions and delays in web automation
+- Submitting data to a Google Form
+
+[Day 54: Introduction to Flask and Web Development](Day54-Flask-and-WebDev)
+- Introduction to Flask, a lightweight web application framework for Python
+- Created a simple Flask application with two routes
