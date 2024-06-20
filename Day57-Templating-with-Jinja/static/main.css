@@ -1,0 +1,93 @@
+:root {
+
+    /* Primary: Tealish */
+    --primary-100: #F2FEFF;
+    --primary-200: #BFFCFE;
+    --primary-300: #89F7F3;
+    --primary-400: #51E3D6;
+    --primary-500: #1EBDA5;
+    --primary-600: #0A977A;
+    --primary-700: #027154;
+    --primary-800: #004C33;
+    --primary-900: #002618;
+
+    /* Accent: Ghee Yellow */
+    --accent-100: #FEFFF2;
+    --accent-200: #FDFEBF;
+    --accent-300: #FAF68B;
+    --accent-400: #EDDF55;
+    --accent-500: #D4B922;
+    --accent-600: #A8880B;
+    --accent-700: #7D5C02;
+    --accent-800: #523700;
+    --accent-900: #261800;
+
+    /* Neutral */
+    --neutral-100: #FAFCFC;
+    --neutral-200: #E7EDED;
+    --neutral-300: #D4DEDE;
+    --neutral-400: #C2CFCE;
+    --neutral-500: #B0BFBD;
+    --neutral-600: #8C9997;
+    --neutral-700: #687370;
+    --neutral-800: #454D4A;
+    --neutral-900: #222625;
+}
+html {
+}
+    position: relative;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: var(--accent-900);
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+}
+header {
+    background-color: var(--primary-600);
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%
+    overflow: hidden;
+    margin: 0px;
+    padding: 0px;
+    height: 100px;
+    z-index: 1; /* Ensures the header stays on top of other content */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--neutral-100); /* Change the text color to white */
+    font-size: 24px; /* Increase the font size */
+    border: none;
+}
+footer {
+    background-color: var(--primary-600);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 50px;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 15px; /* Add some padding to the right */
+    box-sizing: border-box; /* Add this line */
+    color: var(--neutral-100); /* Change the text color to white */
+}
+.post {
+    width: 75%;
+    background-color: var(--primary-300);
+    color: var(--neutral-900);
+    border: 2px solid var(--accent-200);
+    margin: auto; /* Center the div */
+    margin-bottom: 20px;
+    margin-top: 20px;
+    padding: 20px; /* Add some padding */
+    box-sizing: border-box; /* Include padding and border in the div's total width and height */
+}

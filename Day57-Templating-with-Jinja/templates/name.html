@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Flask Website</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='main.css') }}">
+</head>
+<body>
+<header><h1>Name Information</h1></header>
+<p>Based on your name, {{name}}, I think you're about {{age}} years old and are a {{gender}}.</p>
+<footer>Copyright &copy; {{current_year}} by Robin Sizemore</footer>
+</body>
+</html>

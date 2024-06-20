@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Flask Website</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='main.css') }}">
+</head>
+<body>
+<header><h1 style="text-align: center">Welcome To My Blog</h1></header>
+{% if post_id == 0 %}
+    {% for post in posts %}
+        <div class="post">
+            <h2>{{ post.title }}</h2>
+            <h3>{{ post.subtitle }}</h3>
+            <a href="{{ url_for('blog_page', num=post.id) }}">More</a>
+        </div>
+    {% endfor %}
+{% else %}
+    {% for post in posts %}
+        {% if post_id == post.id %}
+        <div class="post">
+            <h2>{{ post.title }}</h2>
+            <h3>{{ post.subtitle }}</h3>
+            <p>{{ post.body }}</p>
+        </div>
+        {% endif %}
+    {% endfor %}
+{% endif %}
+<footer>Copyright &copy; {{current_year}} by Robin Sizemore</footer>
+</body>
+</html>
