@@ -189,3 +189,6 @@ Please note that I've decided to skip Day 51 and Day 52 of the course. The proje
 [Day 54: Introduction to Flask and Web Development](Day54-Flask-and-WebDev)
 - Introduction to Flask, a lightweight web application framework for Python
 - Created a simple Flask application with two routes
+
+Unfortunately, due to a Git mishap, I lost work from Days 55-63. Continuing with Day 64 here.
+
